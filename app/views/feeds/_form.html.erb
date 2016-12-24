@@ -1,0 +1,33 @@
+<br/><br/>
+
+<div class="row">
+  <div class="columns small-12">
+    <%= form_for @feed do |f| %>
+
+      <div class="row">
+        <div class="columns large-4">
+          <%= f.text_field :title, placeholder: 'Title' %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="columns large-4">
+          <%= f.text_field :query, placeholder: 'Query' %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="columns large-4">
+          <%= f.text_field :base_url, placeholder: 'Base URL' %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="columns large-4">
+          <%= f.submit class: 'button small' %>
+        </div>
+      </div>
+
+    <% end %>
+  </div>
+</div>

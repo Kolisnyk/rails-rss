@@ -1,0 +1,21 @@
+<br/><br/>
+<div class="row">
+  <div class="columns small-12">
+
+    <h4><em><%= @feed.title %></em> Posts</h4>
+
+    <hr/><br/>
+
+    <%= react_component 'Posts', { data: @posts } %>
+
+    <% if @posts.length == 0 %>
+      <p>
+        No posts for this query: <em><%= @feed.query %></em>.
+      </p>
+    <% end %>
+
+    <br/><br/>
+
+    <%= link_to 'Back', root_path %>
+  </div>
+</div>

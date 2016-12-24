@@ -1,0 +1,16 @@
+<br/><br/>
+
+<div class="row">
+  <div class="columns small-12">
+
+    <h2>Feeds</h2>
+
+    <%= link_to 'New Feed', new_feed_path, class: "button success small" %>
+
+    <hr/>
+
+    <%= react_component 'Feeds', { data: @feeds } %>
+
+    <br/>
+  </div>
+</div>
